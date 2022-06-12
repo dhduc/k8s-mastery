@@ -8,3 +8,29 @@ To learn more about Kubernetes and other related topics check the following exam
 * [Istio around everything else series](https://rinormaloku.com/series/istio-around-everything-else/)
 * [Simple CI/CD for Kubernetes with Azure DevOps](https://www.orange-networks.com/blogs/224-azure-devops-ci-cd-pipeline-to-deploy-to-kubernetes)
 * Envoy series - to be added!
+
+# Install
+
+- minikube
+
+```
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+minikube start
+```
+
+- kubectl
+
+```
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+sudo mv ./kubectl /usr/local/bin/kubectl
+kubectl version
+```
+
+- maven
+
+```
+sudo apt install maven
+mvn -version
+```
